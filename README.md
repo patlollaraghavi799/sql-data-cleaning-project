@@ -1,8 +1,10 @@
-# SQL Data Cleaning Project
+# SQL Data Cleaning & Exploration Project
 
 ## 📌 Overview
 
-This project demonstrates the process of cleaning and preparing a real-world dataset using MySQL. The goal was to improve data quality by removing duplicates, standardizing values, handling missing data, correcting data formats, and preparing the dataset for analysis.
+This project demonstrates the complete process of cleaning and exploring a real-world layoffs dataset using MySQL. The dataset was first cleaned to improve its quality and consistency, and then analyzed using SQL queries to uncover trends and insights.
+
+The project helped me strengthen my understanding of SQL by applying data cleaning techniques and performing exploratory data analysis on real-world data.
 
 ---
 
@@ -13,71 +15,79 @@ This project demonstrates the process of cleaning and preparing a real-world dat
 
 ---
 
-## 🎯 Objectives
+## 🎯 Project Objectives
 
-- Create a staging table for safe data cleaning
-- Identify and remove duplicate records
+- Clean and prepare raw data for analysis
+- Remove duplicate records
 - Standardize inconsistent values
-- Remove unnecessary spaces
-- Format date values correctly
 - Handle missing and null values
-- Delete records with insufficient data
-- Prepare a clean dataset for further analysis
+- Convert date formats
+- Explore the cleaned dataset to identify trends and insights
 
 ---
 
 ## 🛠 SQL Concepts Used
 
-- CREATE TABLE
-- INSERT INTO
-- Common Table Expressions (CTEs)
 - Window Functions (`ROW_NUMBER()`)
+- Common Table Expressions (CTEs)
+- Joins
 - UPDATE
 - DELETE
 - ALTER TABLE
-- JOIN
 - String Functions (`TRIM()`)
 - Date Functions (`STR_TO_DATE()`)
+- Aggregate Functions
+- GROUP BY
+- ORDER BY
 
 ---
 
-## 📈 Data Cleaning Steps
+## 🧹 Data Cleaning Process
 
-### 1. Created a Staging Table
-Copied the original dataset into a staging table to preserve the raw data.
+- Created a staging table to preserve the original dataset
+- Identified and removed duplicate records
+- Standardized company, industry, and country values
+- Removed extra spaces and corrected inconsistent entries
+- Converted date values into SQL DATE format
+- Handled missing values where possible
+- Removed records with insufficient information
+- Prepared a clean dataset for analysis
 
-### 2. Removed Duplicate Records
-Used the `ROW_NUMBER()` window function to identify duplicate rows and removed them.
+---
 
-### 3. Standardized Data
-- Removed extra spaces from company names
-- Standardized industry names (e.g., Crypto)
-- Corrected country names
-- Converted dates into SQL DATE format
+## 📊 Data Exploration
 
-### 4. Handled Missing Values
-- Replaced blank industry values where possible using self joins
-- Removed records containing insufficient information
+After cleaning the dataset, I performed exploratory data analysis to better understand layoff trends.
 
-### 5. Final Cleanup
-Dropped temporary columns used during the cleaning process
+Some of the analyses included:
 
-## 📚 What I Learned
+- Companies with the highest layoffs
+- Industry-wise layoffs
+- Country-wise layoffs
+- Year-wise and monthly layoff trends
+- Stage-wise layoffs
+- Percentage of employees laid off
+- Ranking companies based on total layoffs
+- Additional SQL queries to explore patterns and insights
 
-Through this project, I gained hands-on experience with:
+---
 
-- SQL data cleaning techniques
-- Window functions
-- Data standardization
-- Handling missing values
-- Working with dates in SQL
-- Preparing datasets for analysis
+## 📚 Key Learning Outcomes
+
+Through this project, I gained hands-on experience in:
+
+- Cleaning real-world datasets using SQL
+- Working with Window Functions and CTEs
+- Handling duplicate and missing data
+- Standardizing inconsistent values
+- Performing exploratory data analysis using SQL
+- Writing efficient SQL queries to extract meaningful insights
 
 ---
 
 ## 🙏 Acknowledgement
 
-This project was completed as part of my SQL learning journey by following the SQL Data Cleaning Project from **Alex The Analyst**. The project was recreated and documented by me for learning and practice purposes.
+The data cleaning workflow in this project was inspired by Alex The Analyst's SQL learning series. After completing the guided learning, I further explored the cleaned dataset by writing additional SQL queries to analyze trends and gain insights independently.
 
 ---
 
